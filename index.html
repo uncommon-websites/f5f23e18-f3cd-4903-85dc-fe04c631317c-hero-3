@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golee | Sports Club Management Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .custom-highlight {
+            background-color: #ffeeb5;
+        }
+        .custom-blue {
+            background-color: #0ea5e9;
+        }
+        .custom-blue:hover {
+            background-color: #0284c7;
+        }
+        /* Hide scrollbar for cleaner mockup look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- Navbar -->
+    <nav class="w-full max-w-[1400px] mx-auto px-6 py-5 flex items-center justify-between">
+        <div class="flex items-center gap-8">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z" fill="black"/>
+                    <path d="M16 10C12.6863 10 10 12.6863 10 16C10 19.3137 12.6863 22 16 22C19.3137 22 22 19.3137 22 16C22 12.6863 19.3137 10 16 10Z" fill="black"/>
+                </svg>
+            </a>
+            
+            <!-- Left Links -->
+            <div class="hidden md:flex items-center gap-6 text-[15px] font-medium text-gray-900">
+                <a href="#" class="hover:text-[#475569]">Features</a>
+                <a href="#" class="hover:text-gray-600">Pricing</a>
+            </div>
+        </div>
+
+        <!-- Right Actions -->
+        <div class="flex items-center gap-6">
+            <a href="#" class="text-[15px] font-medium text-gray-600 hover:text-gray-900">Login</a>
+            <a href="#" class="custom-blue text-white px-5 py-2.5 rounded-lg text-[15px] font-medium transition-colors">Get started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-16 pb-20 px-4 sm:px-6 flex flex-col items-center text-center">
+        
+        <!-- Headline -->
+        <h1 class="text-5xl md:text-[64px] leading-[1.1] font-bold tracking-tight text-black max-w-4xl mx-auto mb-10">
+            The digital heart of <br class="hidden md:block" />
+            <span class="custom-highlight px-3 py-1 rounded-lg inline-block mt-1">your sports club</span>
+        </h1>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-3 mb-10">
+            <a href="#" class="custom-blue text-white px-8 py-3.5 rounded-xl text-[17px] font-semibold transition-colors w-full sm:w-auto">
+                Get started
+            </a>
+            <a href="#" class="bg-white border border-gray-200 text-gray-700 px-6 py-3.5 rounded-xl text-[17px] font-semibold hover:bg-gray-50 transition-colors flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm">
+                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
+                </svg>
+                Request a demo
+            </a>
+        </div>
+
+        <!-- Subtext -->
+        <div class="flex items-center gap-2 text-gray-500 text-sm mb-12">
+            <span class="text-gray-400">✦</span>
+            <span>New: Automated membership registration and CSI integration now live</span>
+        </div>
+
+        <!-- UI Mockup Container -->
+        <div class="w-full max-w-[1200px] bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden flex text-left h-[800px] md:h-[700px]">
+            
+            <!-- Sidebar Icon Rail -->
+            <div class="w-14 border-r border-gray-100 flex flex-col items-center py-4 gap-6 bg-white shrink-0">
+                <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-500">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                </div>
+                <div class="flex flex-col gap-6 text-gray-400">
+                    <svg class="w-5 h-5 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-5 h-5 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg class="w-5 h-5 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 3.214L13 21l-2.286-6.857L5 12l5.714-3.214L13 3z"></path></svg>
+                    <svg class="w-5 h-5 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <svg class="w-5 h-5 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+
+            <!-- Sidebar List -->
+            <div class="w-64 bg-[#fbfbfb] border-r border-gray-100 flex flex-col overflow-y-auto no-scrollbar hidden md:flex">
+                
+                <!-- Section: Yesterday -->
+                <div class="p-3">
+                    <div class="text-[11px] font-medium text-gray-400 mb-2 px-2">Yesterday</div>
+                    <div class="flex items-center justify-between px-2 py-1.5 bg-gray-200/50 rounded-md text-sm text-gray-900 font-medium cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <span class="text-blue-500">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                            </span>
+                            Main Dashboard
+                        </div>
+                        <span class="text-xs text-gray-400">34</span>
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 h-4 bg-red-100 text-red-500 rounded flex items-center justify-center text-[10px] font-bold">A</span>
+                            golee.so
+                        </div>
+                        <span class="text-xs text-gray-400">41</span>
+                    </div>
+                </div>
+
+                <!-- Section: Last week -->
+                <div class="p-3 pt-0">
+                    <div class="text-[11px] font-medium text-gray-400 mb-2 px-2">Last week</div>
+                    <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Athlete Registrations
+                    </div>
+                    <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Training Schedules
+                    </div>
+                </div>
+
+                <!-- Section: Previous 30 days -->
+                <div class="p-3 pt-0">
+                    <div class="text-[11px] font-medium text-gray-400 mb-2 px-2">Previous 30 days</div>
+                    <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Financial Reports
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Demos
+                        </div>
+                        <span class="text-xs text-gray-400">29</span>
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                            Peter x Dennis
+                        </div>
+                        <span class="text-xs text-gray-400">2</span>
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                            creandum.com
+                        </div>
+                        <span class="text-xs text-gray-400">3</span>
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 h-4 rounded-full bg-orange-400"></span>
+                            morgen.so
+                        </div>
+                        <span class="text-xs text-gray-400">1</span>
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 h-4 rounded-full bg-blue-400"></span>
+                            dennis.de
+                        </div>
+                        <span class="text-xs text-gray-400">2</span>
+                    </div>
+                </div>
+
+                <!-- Section: Past -->
+                <div class="p-3 pt-0">
+                    <div class="text-[11px] font-medium text-gray-400 mb-2 px-2">Past</div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                            product
+                        </div>
+                        <span class="text-xs text-gray-400">14</span>
+                    </div>
+                    <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <div class="flex items-center gap-2">
+                            <img src="https://placehold.co/16x16" alt="user" class="w-4 h-4 rounded-full">
+                            stefan x dennis
+                        </div>
+                        <span class="text-xs text-gray-400">6</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Product Demo and Feedback
+                    </div>
+                    <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 rounded-md text-sm text-gray-600 cursor-pointer">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Brief Greeting
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="flex-1 bg-white p-8 overflow-y-auto relative">
+                
+                <!-- Header -->
+                <div class="flex justify-between items-start mb-8">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <span class="text-blue-500">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                        </span>
+                        <span class="font-medium">Club Performance</span>
+                        <svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs text-gray-400">Updated 49 minutes ago</span>
+                        <div class="flex -space-x-2">
+                            <img src="https://placehold.co/24x24" class="w-6 h-6 rounded-full border-2 border-white" alt="Avatar">
+                            <img src="https://placehold.co/24x24" class="w-6 h-6 rounded-full border-2 border-white" alt="Avatar">
+                            <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-[10px] text-gray-500 font-bold">A</div>
+                        </div>
+                        <button class="custom-blue text-white text-xs font-medium px-3 py-1.5 rounded-md">Share</button>
+                    </div>
+                </div>
+
+                <!-- Document Title -->
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Week Kickoff</h2>
+                <p class="text-sm text-gray-700 leading-relaxed mb-8">
+                    Streamlined registration for over 450 athletes with automated medical certificate tracking. Operations now save secretaries an average of 15 hours per week on manual paperwork and CSI compliance.
+                </p>
+
+                <!-- Timeline -->
+                <div class="mb-2">
+                    <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4">Timeline</h3>
+                    <div class="relative border-l-2 border-gray-100 ml-1.5 space-y-8 pb-4">
+                        
+                        <!-- Item 1 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-gray-300 rounded-full border-2 border-white box-content"></div>
+                            <div class="flex justify-between items-start">
+                                <p class="text-sm text-gray-800">Member registrations hit 450 (12.5% increase) for the new season</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap ml-4">Mar 24, 16:45</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-gray-300 rounded-full border-2 border-white box-content"></div>
+                            <div class="flex justify-between items-start">
+                                <p class="text-sm text-gray-800 max-w-md">Automated renewal notices sent to all previous season members via WhatsApp and Email</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap ml-4">Mar 24, 16:45</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-gray-300 rounded-full border-2 border-white box-content"></div>
+                            <div class="flex justify-between items-start">
+                                <p class="text-sm text-gray-800">Online portal signups show 85% completion rate for medical document uploads</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap ml-4">Mar 17, 17:00</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-gray-300 rounded-full border-2 border-white box-content"></div>
+                            <div class="flex justify-between items-start">
+                                <p class="text-sm text-gray-800">Club management savings: Administrators report 12 hours saved weekly on manual paperwork</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap ml-4">Mar 17, 17:00</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-gray-300 rounded-full border-2 border-white box-content"></div>
+                            <div class="flex justify-between items-start">
+                                <p class="text-sm text-gray-800">New 'Tesseramento' module synchronized with national federation databases</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap ml-4">Mar 10, 17:00</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-gray-300 rounded-full border-2 border-white box-content"></div>
+                            <div class="flex justify-between items-start">
+                                <p class="text-sm text-gray-800">Total fees collected: €125,400 with 98% payment reconciliation accuracy</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap ml-4">Mar 3, 16:45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions Section -->
+                <div class="mt-4">
+                    <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-3">Actions</h3>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <!-- Email Header -->
+                        <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 flex justify-between items-center">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-blue-500 rounded text-white p-0.5">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </span>
+                                <span class="text-xs font-semibold text-gray-700">Email</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-xs text-gray-400">Send email</span>
+                                <span class="text-gray-300">|</span>
+                                <svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            </div>
+                        </div>
+                        <!-- Email Body -->
+                        <div class="p-4 bg-white">
+                            <div class="flex items-center gap-4 mb-3">
+                                <span class="text-xs text-gray-500 w-10">To</span>
+                                <span class="text-sm text-gray-800">team@golee.so</span>
+                            </div>
+                            <div class="h-px bg-gray-100 w-full mb-3"></div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-xs text-gray-500 w-10">Subject</span>
+                                <span class="text-sm text-gray-800">medical certificate expiration - important update</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
